@@ -35,6 +35,8 @@
       document.getElementById('mainNav').classList.toggle('show');
     });
 
+    // toTop؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟
+
      const toTopBtn = document.getElementById("toTop");
 
   window.addEventListener("scroll", () => {
@@ -49,3 +51,26 @@
   window.addEventListener("load", () => {
     toTopBtn.classList.remove("show");
   });
+
+
+// testimonialSlider؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟؟
+
+
+
+// Testimonial carousel functionality (basic)
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll('.testimonial-card');
+
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+// Auto-rotate testimonials on mobile
+if (window.innerWidth <= 768) {
+    setInterval(() => {
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+        showTestimonial(currentTestimonial);
+    }, 5000);
+}
