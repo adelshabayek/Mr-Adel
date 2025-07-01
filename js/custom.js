@@ -34,3 +34,18 @@
     document.getElementById('menuToggle').addEventListener('click', () => {
       document.getElementById('mainNav').classList.toggle('show');
     });
+
+     const toTopBtn = document.getElementById("toTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      toTopBtn.classList.add("show");
+    } else {
+      toTopBtn.classList.remove("show");
+    }
+  });
+
+  // إخفاء الزر مبدئيًا
+  window.addEventListener("load", () => {
+    toTopBtn.classList.remove("show");
+  });
