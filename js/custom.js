@@ -57,20 +57,20 @@ window.addEventListener("load", () => {
 
 
 
-// Testimonial carousel functionality (basic)
-let currentTestimonial = 0;
-const testimonials = document.querySelectorAll('.testimonial-card');
+// // Testimonial carousel functionality (basic)
+// let currentTestimonial = 0;
+// const testimonials = document.querySelectorAll('.testimonial-card');
 
-function showTestimonial(index) {
-  testimonials.forEach((testimonial, i) => {
-    testimonial.style.display = i === index ? 'block' : 'none';
-  });
-}
+// function showTestimonial(index) {
+//   testimonials.forEach((testimonial, i) => {
+//     testimonial.style.display = i === index ? 'block' : 'none';
+//   });
+// }
 
-// Auto-rotate testimonials on mobile
-if (window.innerWidth <= 768) {
-  setInterval(() => {
-    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-    showTestimonial(currentTestimonial);
-  }, 5000);
-}
+// // Auto-rotate testimonials on mobile
+// if (window.innerWidth <= 768) {
+//   setInterval(() => {
+//     currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+//     showTestimonial(currentTestimonial);
+//   }, 5000);
+// }

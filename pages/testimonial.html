@@ -48,6 +48,9 @@ From the basics to fluency, we guide you with practical steps and clear results.
     <!-- style stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
 
+        <link rel="stylesheet" href="../css/media.css">
+
+
   </head>
 
   <body id="siteBody">
@@ -61,7 +64,7 @@ From the basics to fluency, we guide you with practical steps and clear results.
       <nav id="mainNav" class="nav-bar">
         <a href="../index.html" data-en="Home"
           data-ar="الرئيسية">الرئيسية</a>
-        <a href="#" data-en="Courses" data-ar="آراء الطلاب">آراء الطلاب</a>
+        <a href="#" data-en="Testimonials" data-ar="شهادات الطلاب">شهادات الطلاب</a>
         <a href="about.html" data-en="About" data-ar="عنّي">عنّي</a>
         <a href="#" data-en="Contact" data-ar="اتصل بي">اتصل بي</a>
         <button class="lang-btn" onclick="toggleLang()"
@@ -70,82 +73,117 @@ From the basics to fluency, we guide you with practical steps and clear results.
     </header>
 
     <!-- Testimonials Section -->
+
     <section id="testimonials" class="testimonials">
       <div class="container">
-        <h2 class="section-title" data-en="What Students Say"
-          data-ar="آراء الطلاب">آراء الطلاب</h2>
 
-        <div class="testimonials-grid">
+        <div class="testimonials-h2">
+          <h2 data-en="Testimonials"
+          data-ar="شهادات الطلاب"> شهادات الطلاب</h2>
+        </div>
 
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <p
-                data-en="Sarah's teaching style made English literature come alive for me. Her passion is contagious and her explanations are crystal clear."
-                data-ar="أسلوب تدريس سارة جعل الأدب الإنجليزي ينبض بالحياة بالنسبة لي. شغفها معدٍ وشرحها واضح تمامًا.">
-                أسلوب تدريس سارة جعل الأدب الإنجليزي ينبض بالحياة بالنسبة لي.
-                شغفها معدٍ وشرحها واضح تمامًا.
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-info">
-                <h4>Emily Chen</h4>
-                <p data-en="High School Student"
-                  data-ar="طالبة في المرحلة الثانوية">طالبة في المرحلة
-                  الثانوية</p>
+        <div id="carouselExampleInterval" class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <div class="testimonials-img">
+                    <img src="../img/male.png" alt="" width="80">
+                  </div>
+                  
+                  <p
+                    data-en="The test prep sessions were incredibly helpful. I improved my SAT score by 200 points thanks to Sarah's strategies."
+                    data-ar="جلسات التحضير للاختبارات كانت مفيدة جدًا. لقد حسّنت درجتي في اختبار SAT بمقدار 200 نقطة بفضل استراتيجيات سارة.">
+                    جلسات التحضير للاختبارات كانت مفيدة جدًا. لقد حسّنت درجتي في
+                    اختبار SAT بمقدار 200 نقطة بفضل استراتيجيات سارة.
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <h4>Michael Thompson</h4>
+                    <p data-en="College Applicant"
+                      data-ar="متقدّم للجامعة">متقدّم
+                      للجامعة</p>
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
               </div>
-              <div class="rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <div class="testimonials-img">
+                    <img src="../img/male.png" alt="" width="80">
+                  </div>
+
+                  <p
+                    data-en="Thanks to Sarah's ESL classes, I improved my English significantly and gained confidence in speaking and writing."
+                    data-ar="بفضل دروس سارة في اللغة الإنجليزية، تحسنت لغتي كثيرًا واكتسبت ثقة في التحدث والكتابة.">
+                    بفضل دروس سارة في اللغة الإنجليزية، تحسنت لغتي كثيرًا
+                    واكتسبت
+                    ثقة في التحدث والكتابة.
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <h4>Carlos Rodriguez</h4>
+                    <p data-en="Adult Learner" data-ar="متعلم بالغ">متعلم
+                      بالغ</p>
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  <div class="testimonials-img">
+                    <img src="../img/male.png" alt="" width="80">
+                  </div>
+
+                  <p
+                    data-en="Sarah's teaching style made English literature come alive for me. Her passion is contagious and her explanations are crystal clear."
+                    data-ar="أسلوب تدريس سارة جعل الأدب الإنجليزي ينبض بالحياة بالنسبة لي. شغفها معدٍ وشرحها واضح تمامًا.">
+                    أسلوب تدريس سارة جعل الأدب الإنجليزي ينبض بالحياة بالنسبة
+                    لي.
+                    شغفها معدٍ وشرحها واضح تمامًا.
+                  </p>
+                </div>
+                <div class="testimonial-author">
+                  <div class="author-info">
+                    <h4>Emily Chen</h4>
+                    <p data-en="High School Student"
+                      data-ar="طالبة في المرحلة الثانوية">طالبة في المرحلة
+                      الثانوية</p>
+                  </div>
+                  <div class="rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <p
-                data-en="Thanks to Sarah's ESL classes, I improved my English significantly and gained confidence in speaking and writing."
-                data-ar="بفضل دروس سارة في اللغة الإنجليزية، تحسنت لغتي كثيرًا واكتسبت ثقة في التحدث والكتابة.">
-                بفضل دروس سارة في اللغة الإنجليزية، تحسنت لغتي كثيرًا واكتسبت
-                ثقة في التحدث والكتابة.
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-info">
-                <h4>Carlos Rodriguez</h4>
-                <p data-en="Adult Learner" data-ar="متعلم بالغ">متعلم بالغ</p>
-              </div>
-              <div class="rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="testimonial-content">
-              <p
-                data-en="The test prep sessions were incredibly helpful. I improved my SAT score by 200 points thanks to Sarah's strategies."
-                data-ar="جلسات التحضير للاختبارات كانت مفيدة جدًا. لقد حسّنت درجتي في اختبار SAT بمقدار 200 نقطة بفضل استراتيجيات سارة.">
-                جلسات التحضير للاختبارات كانت مفيدة جدًا. لقد حسّنت درجتي في
-                اختبار SAT بمقدار 200 نقطة بفضل استراتيجيات سارة.
-              </p>
-            </div>
-            <div class="testimonial-author">
-              <div class="author-info">
-                <h4>Michael Thompson</h4>
-                <p data-en="College Applicant" data-ar="متقدّم للجامعة">متقدّم
-                  للجامعة</p>
-              </div>
-              <div class="rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
